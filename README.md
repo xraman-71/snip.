@@ -2,7 +2,7 @@
 
 > A clean, minimal, 100% frontend link shortener. No server. No database. No account. Just paste, shorten, and share.
 
-[![Live Demo](https://img.shields.io/badge/🌐%20Live%20Demo-Visit%20Site-1a1a1a?style=for-the-badge)](https://xraman-71.github.io/snip./)
+[![Live Demo](https://img.shields.io/badge/🌐%20Live%20Demo-Visit%20Site-1a1a1a?style=for-the-badge)](https://xraman-71.github.io/spin./)
 
 ![HTML](https://img.shields.io/badge/HTML-5-E34F26?style=flat-square&logo=html5&logoColor=white)
 ![CSS](https://img.shields.io/badge/CSS-3-1572B6?style=flat-square&logo=css3&logoColor=white)
