@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — Snip</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --primary:      #1a1a1a;
+      --primary-h:    #000000;
+      --bg:           #FFFFFF;
+      --bg-soft:      #F5F5F0;
+      --border-main:  #2d2d2d;
+      --border-light: #DDDDD8;
+      --text:         #111111;
+      --text-sub:     #3a3a3a;
+      --text-muted:   #7a7a72;
+      --font-body: 'Poppins', sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: var(--font-body);
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      position: sticky; top: 0; z-index: 100;
+      background: rgba(255,255,255,0.92);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border-light);
+    }
+    .nav-inner {
+      max-width: 1100px; margin: 0 auto; padding: 0 24px;
+      height: 64px; display: grid;
+      grid-template-columns: 1fr auto 1fr; align-items: center;
+    }
+    .nav-logo {
+      font-family: var(--font-mono); font-weight: 700; font-size: 1.2rem;
+      color: var(--primary); text-decoration: none; letter-spacing: -0.5px;
+    }
+    .nav-logo span { color: var(--text-muted); }
+    .nav-links { display: flex; gap: 4px; align-items: center; justify-content: center; }
+    .nav-links a {
+      font-size: 0.82rem; font-weight: 500; color: var(--text-sub);
+      text-decoration: none; padding: 7px 14px; border-radius: 8px;
+      transition: background 0.2s, color 0.2s;
+    }
+    .nav-links a:hover { background: var(--bg-soft); color: var(--primary); }
+    .nav-right { display: flex; justify-content: flex-end; }
+
+    .page-hero {
+      background: var(--bg-soft);
+      border-bottom: 1px solid var(--border-light);
+      padding: 72px 24px 56px;
+      text-align: center;
+    }
+    .page-tag {
+      font-family: var(--font-mono);
+      font-size: 0.7rem; font-weight: 500;
+      text-transform: uppercase; letter-spacing: 0.1em;
+      color: var(--text-muted); margin-bottom: 16px; display: block;
+    }
+    .page-hero h1 {
+      font-size: clamp(2rem, 4vw, 2.8rem);
+      font-weight: 700; letter-spacing: -0.03em; color: var(--primary);
+      margin-bottom: 12px;
+    }
+    .page-hero p { font-size: 0.9rem; color: var(--text-muted); }
+
+    .content {
+      max-width: 720px; margin: 0 auto;
+      padding: 72px 24px 96px;
+    }
+    .content h2 {
+      font-size: 1.2rem; font-weight: 600; color: var(--primary);
+      margin: 40px 0 12px; letter-spacing: -0.015em;
+    }
+    .content h2:first-child { margin-top: 0; }
+    .content p {
+      font-size: 0.93rem; color: var(--text-sub);
+      line-height: 1.8; margin-bottom: 16px;
+    }
+    .content ul {
+      padding-left: 20px; margin-bottom: 16px;
+    }
+    .content ul li {
+      font-size: 0.93rem; color: var(--text-sub);
+      line-height: 1.8; margin-bottom: 6px;
+    }
+    .highlight-box {
+      background: var(--bg-soft);
+      border: 1px solid var(--border-light);
+      border-radius: 12px;
+      padding: 20px 24px;
+      margin: 24px 0;
+      font-family: var(--font-mono);
+      font-size: 0.82rem;
+      color: var(--primary);
+      line-height: 1.8;
+    }
+    .divider {
+      border: none;
+      border-top: 1px solid var(--border-light);
+      margin: 40px 0;
+    }
+
+    footer {
+      background: var(--bg-soft);
+      border-top: 1px solid var(--border-light);
+      padding: 40px 24px;
+    }
+    .footer-inner {
+      max-width: 1100px; margin: 0 auto;
+      display: flex; justify-content: space-between; align-items: center;
+      flex-wrap: wrap; gap: 16px;
+    }
+    .footer-brand { font-family: var(--font-mono); font-weight: 700; font-size: 1rem; color: var(--primary); }
+    .footer-brand span { color: var(--text-muted); }
+    .footer-links { display: flex; gap: 4px; }
+    .footer-links a {
+      font-size: 0.82rem; color: var(--text-muted); text-decoration: none;
+      padding: 6px 12px; border-radius: 6px; transition: color 0.2s, background 0.2s;
+    }
+    .footer-links a:hover { color: var(--primary); background: var(--border-light); }
+    .footer-copy {
+      font-size: 0.78rem; color: var(--text-muted);
+      width: 100%; text-align: center; margin-top: 8px;
+      border-top: 1px solid var(--border-light); padding-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">snip<span>.</span></a>
+    <nav class="nav-links">
+      <a href="index.html#how-to-use">How to Use</a>
+      <a href="index.html#features">Features</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#faq">FAQ</a>
+    </nav>
+    <div class="nav-right"></div>
+  </div>
+</header>
+
+<div class="page-hero">
+  <span class="page-tag">Legal</span>
+  <h1>Privacy Policy</h1>
+  <p>Last updated: January 1, 2025</p>
+</div>
+
+<div class="content">
+
+  <div class="highlight-box">
+    🔒 TL;DR — Snip collects zero data. Everything runs in your browser. Nothing is ever sent to a server.
+  </div>
+
+  <h2>1. Introduction</h2>
+  <p>Welcome to Snip ("we", "our", "us"). Your privacy is not just important to us — it is the foundation of how Snip is built. This Privacy Policy explains our approach to data, which can be summarised simply: we don't collect any.</p>
+  <p>By using Snip, you confirm that you have read and understood this policy. If you disagree with anything here, please stop using the service.</p>
+
+  <hr class="divider" />
+
+  <h2>2. Information We Collect</h2>
+  <p>We collect <strong>no personal information whatsoever.</strong> Snip is a fully client-side application. This means:</p>
+  <ul>
+    <li>No account creation is required.</li>
+    <li>No login credentials are stored.</li>
+    <li>No email addresses, names, or identifiers are collected.</li>
+    <li>No IP addresses are logged.</li>
+    <li>No usage analytics or telemetry are transmitted.</li>
+  </ul>
+
+  <hr class="divider" />
+
+  <h2>3. How Your Data Is Stored</h2>
+  <p>When you shorten a URL, the mapping between your short code and the original URL is stored exclusively in your browser's <code style="font-family:var(--font-mono);font-size:0.85em;">localStorage</code>. This storage:</p>
+  <ul>
+    <li>Exists only on your device.</li>
+    <li>Is never transmitted to any server.</li>
+    <li>Cannot be accessed by us or any third party.</li>
+    <li>Can be deleted at any time by clearing your browser's site data.</li>
+  </ul>
+
+  <hr class="divider" />
+
+  <h2>4. Cookies</h2>
+  <p>Snip does not use cookies of any kind. We do not use tracking cookies, session cookies, or advertising cookies. The only browser storage used is <code style="font-family:var(--font-mono);font-size:0.85em;">localStorage</code> to save your link history locally on your device.</p>
+
+  <hr class="divider" />
+
+  <h2>5. Third-Party Services</h2>
+  <p>Snip loads Google Fonts (Poppins and JetBrains Mono) from Google's CDN. This means your browser may make requests to Google's servers to download these fonts. Google's privacy policy governs those requests. We do not share any user data with Google or any other third party.</p>
+  <p>We recommend consulting <a href="https://policies.google.com/privacy" target="_blank" rel="noopener" style="color:var(--primary);">Google's Privacy Policy</a> if you have concerns.</p>
+
+  <hr class="divider" />
+
+  <h2>6. Children's Privacy</h2>
+  <p>Snip is not directed at children under the age of 13. Since we collect no data at all, there is no risk of inadvertent data collection from children. Parents or guardians with questions are welcome to contact us.</p>
+
+  <hr class="divider" />
+
+  <h2>7. Changes to This Policy</h2>
+  <p>We may update this Privacy Policy from time to time. Changes will be reflected by the "Last updated" date at the top of this page. Continued use of Snip after changes constitutes acceptance of the updated policy.</p>
+
+  <hr class="divider" />
+
+  <h2>8. Contact</h2>
+  <p>If you have any questions about this Privacy Policy, you can reach us at <a href="mailto:privacy@snip.lnk" style="color:var(--primary);">privacy@snip.lnk</a>. (Note: Snip is a demo project; this is a placeholder address.)</p>
+
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">snip<span>.</span></div>
+    <div class="footer-links">
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Service</a>
+    </div>
+    <p class="footer-copy">© 2025 Snip. No rights reserved. No data collected. No servers harmed.</p>
+  </div>
+</footer>
+
+</body>
+</html>
